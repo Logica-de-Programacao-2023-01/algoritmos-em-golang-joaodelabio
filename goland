@@ -1,0 +1,98 @@
+package main
+
+import "fmt"
+
+func main() {
+	var name string
+	fmt.Print("Qual é o seu nome? ")
+	fmt.Scan(&name)
+	fmt.Println("Olá", name)
+}
+
+1 - package main
+
+import "fmt"
+
+func main() {
+	var name string
+	var idade string
+	var peso string
+	fmt.Println("Qual é o seu nome? ")
+	fmt.Scan(&name)
+	fmt.Println("Qual sua idade? ")
+	fmt.Scan(&idade)
+	fmt.Println("Qual seu peso? ")
+	fmt.Scan(&peso)
+	fmt.Println("Olá", name)
+	fmt.Println("Sua idade é", idade)
+	fmt.Println("Seu peso é", peso)
+
+}
+
+
+2 - package main
+
+import "fmt"
+
+func main() {
+
+	var base int
+	var altura int
+	fmt.Println("Valor da base ")
+	fmt.Scan(&base)
+	fmt.Println("Valor da altura ")
+	fmt.Scan(&altura)
+	fmt.Println("A base é", base)
+	fmt.Println("A altura é", altura)
+	fmt.Println("O resultado é", base*altura)
+
+}
+
+
+3 - package main
+
+import "fmt"
+
+func main() {
+
+	var base int
+	var altura int
+	var profundidade int
+	fmt.Println("Valor da base ")
+	fmt.Println("Valor da altura ")
+	fmt.Println("Valor da profundidade ")
+	fmt.Scan(&base)
+	fmt.Scan(&altura)
+	fmt.Scan(&profundidade)
+	fmt.Println("A base é", base)
+	fmt.Println("A altura é", altura)
+	fmt.Println("A profundidade é", profundidade)
+	fmt.Println("O resultado é", base*altura*profundidade)
+
+}
+
+4 - package main
+
+import "fmt"
+
+func main() {
+
+	var valor1 float64
+	var valor2 float64
+	var valor3 float64
+	var valor4 float64
+	fmt.Print("Primeiro valor ")
+	fmt.Scan(&valor1)
+	fmt.Print("Segundo valor ")
+	fmt.Scan(&valor2)
+	fmt.Print("Terceiro valor ")
+	fmt.Scan(&valor3)
+	fmt.Print("Quarto valor ")
+	fmt.Scan(&valor4)
+	fmt.Println(" O primeiro valor: ", valor1)
+	fmt.Println(" O segundo valor: ", valor2)
+	fmt.Println(" O terceiro valor: ", valor3)
+	fmt.Println(" O quarto valor: ", valor4)
+	fmt.Println(" O resultado é ", valor1+valor2+valor3+valor4/4)
+
+}
