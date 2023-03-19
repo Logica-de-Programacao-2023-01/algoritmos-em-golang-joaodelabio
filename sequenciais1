@@ -1,0 +1,25 @@
+Faça um algoritmo que leia três números inteiros e mostre a soma entre eles.
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var numero1 float64
+	var numero2 float64
+	var numero3 float64
+
+	fmt.Print("Primeiro número ")
+	fmt.Scan(&numero1)
+	fmt.Print("Segundo número ")
+	fmt.Scan(&numero2)
+	fmt.Print("Terceiro número ")
+	fmt.Scan(&numero3)
+
+	fmt.Println("O primeiro número: ")
+	fmt.Println("O segundo número: ")
+	fmt.Println("O terceiro número: ")
+	fmt.Println("A soma desses números é: ", numero1+numero2+numero3)
+
+}
