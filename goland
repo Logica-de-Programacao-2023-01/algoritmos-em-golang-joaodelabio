@@ -96,3 +96,22 @@ func main() {
 	fmt.Println(" O resultado é ", valor1+valor2+valor3+valor4/4)
 
 }
+
+
+5 - package main 
+
+import "fmt"
+
+func main () {
+
+	var valorReal float64
+	var valorDolar float64
+
+	fmt.Print("Digite o valor do dólar em reais: ")
+	fmt.Scan(&valorReal)
+	fmt.Print("Digite o valor em dólar: ")
+	fmt.Scan(&valorDolar)
+	
+	valorReal := valorDolar * valorReal
+	fmt.Print("O Valor em reais é:", valorReal)
+}
