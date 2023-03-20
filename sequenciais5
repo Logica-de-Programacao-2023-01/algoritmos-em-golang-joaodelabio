@@ -1,0 +1,14 @@
+sequenciais5
+
+package main
+
+import "fmt"
+
+func main() {
+	var idadeAnos int
+	fmt.Print("sua idade é: ")
+	fmt.Scanln(&idadeAnos)
+
+	idadeDias := idadeAnos * 365
+	fmt.Printf("sua idade em dias é: %d\n", idadeDias)
+}
