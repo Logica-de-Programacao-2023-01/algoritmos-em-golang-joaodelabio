@@ -1,0 +1,15 @@
+sequenciais 2
+
+package main
+
+import "fmt"
+
+func main() {
+	var numero int
+	fmt.Print("digite um numero inteiro: ")
+	fmt.Scanln(&numero)
+
+	fmt.Printf("o dobro de %d é %d\n", numero, numero*2)
+	fmt.Printf("o triplo de %d é %d\n", numero, numero*3)
+	fmt.Printf("o quadruplo de %d é %d\n", numero, numero*4)
+}
