@@ -1,0 +1,20 @@
+sequenciais4
+
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	var n2 float64
+	var n3 float64
+	fmt.Print("primeiro número: ")
+	fmt.Scanln(&n1)
+	fmt.Print("segundo número: ")
+	fmt.Scanln(&n2)
+	fmt.Print("terceiro número: ")
+	fmt.Scanln(&n3)
+	mediaPonderada := (n1*2 + n2*3 + n3*5) / (2 + 3 + 5)
+
+	fmt.Printf("a média ponderada é: %.2f", mediaPonderada)
+}
