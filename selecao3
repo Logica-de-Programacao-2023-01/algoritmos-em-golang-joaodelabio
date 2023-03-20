@@ -1,0 +1,21 @@
+selecao3 
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var peso, altura float64
+
+	fmt.Print("Digite seu peso: ")
+	fmt.Scan(&peso)
+
+	fmt.Print("Digite sua altura: ")
+	fmt.Scan(&altura)
+
+	imc := peso / (altura * altura)
+
+	fmt.Printf("Seu IMC é %.2f\n", imc)
+}
