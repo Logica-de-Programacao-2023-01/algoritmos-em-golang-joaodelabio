@@ -1,0 +1,19 @@
+sequenciais8
+
+package main
+
+import "fmt"
+
+func main() {
+	var numeroDias int
+	fmt.Print("Quantos dias o funcionário trabalha? ")
+	fmt.Scan(&numeroDias)
+	var valorDiaria float64
+	fmt.Println("Qual o valor da diária? ")
+	fmt.Scan(&valorDiaria)
+	
+	salario := float64 (numeroDias * valorDiaria)
+	fmt.Println("O salário é: ", salario )
+
+}
+

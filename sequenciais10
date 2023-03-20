@@ -1,0 +1,14 @@
+sequenciais 10
+
+package main
+
+import "fmt"
+
+func main () {
+	var peso float64
+	fmt.Print("Qual seu peso em kg? ")
+	fmt.Scan(&peso)
+
+	resultado := peso * 2.2046
+	fmt.Println("Seu peso e, libras é", resultado)
+}
