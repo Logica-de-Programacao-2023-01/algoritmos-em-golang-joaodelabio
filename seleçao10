@@ -1,0 +1,24 @@
+seleçao10
+
+package main
+
+import "fmt"
+
+func main() {
+	var idade int
+
+	fmt.Print("Digite a idade: ")
+	fmt.Scanln(&idade)
+
+	switch {
+	case idade <= 9:
+		fmt.Println("Classificação: Mirim")
+	case idade <= 13:
+		fmt.Println("Classificação: Infantil")
+	case idade <= 17:
+		fmt.Println("Classificação: Juvenil")
+	default:
+		fmt.Println("Classificação: Adulto")
+	}
+}
+
