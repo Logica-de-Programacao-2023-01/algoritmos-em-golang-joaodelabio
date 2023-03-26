@@ -1,0 +1,32 @@
+seleçao9	
+
+
+
+package main
+
+import "fmt"
+
+func main() {
+	var a, b, c float64
+
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scanln(&a)
+
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scanln(&b)
+
+	fmt.Print("Digite o terceiro número: ")
+	fmt.Scanln(&c)
+
+	if a > b {
+		a, b = b, a
+	}
+	if b > c {
+		b, c = c, b
+	}
+	if a > b {
+		a, b = b, a
+	}
+
+	fmt.Printf("Os números em ordem crescente são: %.2f, %.2f e %.2f\n", a, b, c)
+}
