@@ -1,0 +1,31 @@
+seleçao 4
+
+package main
+
+import "fmt"
+
+func main() {
+	var peso float32
+	var altura float32
+	var sexo string
+	fmt.Print("Insira seu peso em KG: ")
+	fmt.Scan(&peso)
+	fmt.Print("Insira sua altura em metros: ")
+	fmt.Scan(&altura)
+	fmt.Print("Insira seu sexo: ")
+	fmt.Scan(&sexo)
+
+	var IMC float32 = peso / (altura * altura)
+
+	if IMC < 17 {
+		fmt.Print("A pessoa está muito abaixo do peso ideal ")
+	} else if IMC > 17 && IMC <= 18.49 {
+		fmt.Print("A pessoa está abaixo do peso ideal ")
+	} else if IMC > 18.5 && IMC <= 24.99 {
+		fmt.Print("A pessoa possui um peso normal ")
+	} else if IMC > 25 && IMC <= 29.99 {
+		fmt.Print("A pessoa está acima do peso ideal ")
+
+	}
+
+}
