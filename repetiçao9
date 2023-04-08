@@ -1,0 +1,30 @@
+repetiçao 9
+
+package main
+
+import "fmt"
+
+func main() {
+	var num, soma int
+	var quantosNumeros int
+
+	for {
+		fmt.Print("Digite um número inteiro (ou 0 para cancelar): ")
+		fmt.Scanln(&num)
+
+		if num == 0 {
+			break
+		}
+
+		soma += num
+		quantosNumeros++
+	}
+
+	if quantosNumeros == 0 {
+		fmt.Println("Não foram digitados números válidos.")
+	} else {
+		media := float64(soma) / float64(quantosNumeros)
+		fmt.Printf("A média aritmética dos %d números digitados é %.2f\n", quantosNumeros, media)
+	}
+}
+
